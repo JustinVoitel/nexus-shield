@@ -1,0 +1,1 @@
+{"version":3,"file":"false.js","sourceRoot":"","sources":["../../../src/rules/operators/false.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,SAAS,EAAE,MAAM,UAAU,CAAC;AAErC,MAAM,OAAO,SAAU,SAAQ,SAAmB;IAChD;QACE,KAAK,CAAC,EAAE,CAAC,CAAC;IACZ,CAAC;IAED;;;;OAIG;IACH,KAAK,CAAC,OAAO;QACX,OAAO,KAAK,CAAC;IACf,CAAC;CACF"}

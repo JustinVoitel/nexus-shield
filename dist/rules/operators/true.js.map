@@ -1,0 +1,1 @@
+{"version":3,"file":"true.js","sourceRoot":"","sources":["../../../src/rules/operators/true.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,SAAS,EAAE,MAAM,UAAU,CAAC;AAErC,MAAM,OAAO,QAAS,SAAQ,SAAmB;IAC/C;QACE,KAAK,CAAC,EAAE,CAAC,CAAC;IACZ,CAAC;IAED;;;;OAIG;IACH,KAAK,CAAC,OAAO;QACX,OAAO,IAAI,CAAC;IACd,CAAC;CACF"}
