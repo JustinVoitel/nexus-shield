@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "target": "es2016",
+    "module": "CommonJS",
+    "lib": ["ESNext"],
     "noUnusedLocals": true,
     "rootDir": "src",
     "outDir": "dist",
     "sourceMap": true,
-    "lib": ["es2020"],
     "skipLibCheck": true,
     "strict": true
   },

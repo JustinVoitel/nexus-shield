@@ -1,4 +1,7 @@
-import { BaseRule, RuleAnd, RuleChain, RuleFalse, RuleNot, RuleOr, RuleRace, RuleTrue, } from './rules';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.partial = exports.generic = exports.deny = exports.allow = exports.not = exports.or = exports.race = exports.chain = exports.and = exports.ruleType = exports.rule = void 0;
+const rules_1 = require("./rules");
 /**
  *
  * @param options
@@ -19,12 +22,12 @@ import { BaseRule, RuleAnd, RuleChain, RuleFalse, RuleNot, RuleOr, RuleRace, Rul
  * })
  *
  */
-export const rule = (options) => (func) => {
+exports.rule = (options) => (func) => {
     options = options || {};
-    return new BaseRule(options, func);
+    return new rules_1.BaseRule(options, func);
 };
-export const ruleType = (config) => {
-    return new BaseRule(config, config.resolve);
+exports.ruleType = (config) => {
+    return new rules_1.BaseRule(config, config.resolve);
 };
 /**
  *
@@ -33,8 +36,8 @@ export const ruleType = (config) => {
  * Logical operator and serves as a wrapper for the and operation.
  *
  */
-export const and = (...rules) => {
-    return new RuleAnd(rules);
+exports.and = (...rules) => {
+    return new rules_1.RuleAnd(rules);
 };
 /**
  *
@@ -43,8 +46,8 @@ export const and = (...rules) => {
  * Logical operator and serves as a wrapper for the chain operation.
  *
  */
-export const chain = (...rules) => {
-    return new RuleChain(rules);
+exports.chain = (...rules) => {
+    return new rules_1.RuleChain(rules);
 };
 /**
  *
@@ -53,8 +56,8 @@ export const chain = (...rules) => {
  * Logical operator and serves as a wrapper for the race operation.
  *
  */
-export const race = (...rules) => {
-    return new RuleRace(rules);
+exports.race = (...rules) => {
+    return new rules_1.RuleRace(rules);
 };
 /**
  *
@@ -63,8 +66,8 @@ export const race = (...rules) => {
  * Logical operator or serves as a wrapper for the or operation.
  *
  */
-export const or = (...rules) => {
-    return new RuleOr(rules);
+exports.or = (...rules) => {
+    return new rules_1.RuleOr(rules);
 };
 /**
  *
@@ -73,31 +76,31 @@ export const or = (...rules) => {
  * Logical operator not serves as a wrapper for the not operation.
  *
  */
-export const not = (rule) => {
-    return new RuleNot(rule);
+exports.not = (rule) => {
+    return new rules_1.RuleNot(rule);
 };
 /**
  *
  * Allow queries.
  *
  */
-export const allow = new RuleTrue();
+exports.allow = new rules_1.RuleTrue();
 /**
  *
  * Deny queries.
  *
  */
-export const deny = new RuleFalse();
+exports.deny = new rules_1.RuleFalse();
 /**
  *
  * Helper for generic rules
  *
  */
-export const generic = (rule) => () => rule;
+exports.generic = (rule) => () => rule;
 /**
  *
  * Helper for partial rules
  *
  */
-export const partial = (rule) => () => rule;
+exports.partial = (rule) => () => rule;
 //# sourceMappingURL=builders.js.map

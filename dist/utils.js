@@ -1,4 +1,7 @@
-import { BaseRule } from './rules';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isShieldRule = void 0;
+const rules_1 = require("./rules");
 /**
  *
  * @param x
@@ -6,8 +9,8 @@ import { BaseRule } from './rules';
  * Makes sure that a certain field is a shield rule.
  *
  */
-export const isShieldRule = (x) => {
-    return (x instanceof BaseRule ||
+exports.isShieldRule = (x) => {
+    return (x instanceof rules_1.BaseRule ||
         (x &&
             x.constructor &&
             (x.constructor.name === 'BaseRule' ||

@@ -1,8 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ShieldCache = void 0;
 // Cache
-export var ShieldCache;
+var ShieldCache;
 (function (ShieldCache) {
     ShieldCache["STRICT"] = "strict";
     ShieldCache["CONTEXTUAL"] = "contextual";
     ShieldCache["NO_CACHE"] = "no_cache";
-})(ShieldCache || (ShieldCache = {}));
+})(ShieldCache = exports.ShieldCache || (exports.ShieldCache = {}));
 //# sourceMappingURL=interface.js.map
